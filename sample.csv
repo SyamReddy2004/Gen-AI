@@ -1,0 +1,11 @@
+name,email,age,gender,salary,purchased
+Alice,alice@example.com,29,F,55000,yes
+Bob,bob@example.com,35,M,72000,no
+Carol,carol@example.com,42,F,88000,yes
+Dave,dave@example.com,31,M,61000,no
+Eve,eve@example.com,27,F,49000,yes
+Frank,frank@example.com,55,M,105000,yes
+Grace,grace@example.com,38,F,76000,no
+Henry,henry@example.com,44,M,92000,yes
+Ivy,ivy@example.com,26,F,47000,yes
+Jack,jack@example.com,51,M,98000,no

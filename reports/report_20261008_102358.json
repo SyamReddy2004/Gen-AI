@@ -1,0 +1,57 @@
+{
+  "generated_at": "20261008_102358",
+  "model": "llama3:latest",
+  "metadata": {
+    "dataset_name": "",
+    "source": "",
+    "purpose": "",
+    "owner": "",
+    "license": "",
+    "target_column": ""
+  },
+  "profile": {
+    "rows": 10,
+    "columns": 6,
+    "dtypes": {
+      "name": "str",
+      "email": "str",
+      "age": "int64",
+      "gender": "str",
+      "salary": "int64",
+      "purchased": "str"
+    }
+  },
+  "risks": [
+    {
+      "type": "Missing Documentation",
+      "severity": "Medium",
+      "message": "Missing metadata fields: dataset_name, source, purpose, owner, license",
+      "columns": []
+    },
+    {
+      "type": "Potential PII",
+      "severity": "High",
+      "message": "Columns that may contain personal data: name, email",
+      "columns": [
+        "name",
+        "email"
+      ]
+    },
+    {
+      "type": "Sensitive Attribute",
+      "severity": "Medium",
+      "message": "Protected/sensitive attributes present: age, gender",
+      "columns": [
+        "age",
+        "gender"
+      ]
+    },
+    {
+      "type": "Small Dataset",
+      "severity": "Low",
+      "message": "Only 10 rows \u2014 may not be representative.",
+      "columns": []
+    }
+  ],
+  "documentation": "Dataset Documentation Report: [Name]\n\n**Overview**\n\nThis dataset consists of 10 rows and 6 columns, providing information about individuals. The data is sourced from [Source].\n\n**Intended Use**\n\nThe purpose of this dataset is [Purpose]. It can be used for various purposes such as analysis, research, or modeling.\n\n**Column Descriptions**\n\n1. **name**: A string column containing the names of the individuals (dtype=str, missing=0.0%, unique=10).\n2. **email**: A string column with email addresses of the individuals (dtype=str, missing=0.0%, unique=10).\n3. **age**: An integer column recording the age of the individuals (dtype=int64, missing=0.0%, unique=10).\n4. **gender**: A string column categorizing the gender of the individuals (dtype=str, missing=0.0%, unique=2).\n5. **salary**: An integer column containing the salary information of the individuals (dtype=int64, missing=0.0%, unique=10).\n6. **purchased**: A string column indicating whether the individuals have made a purchase or not (dtype=str, missing=0.0%, unique=2).\n\n**Known Limitations**\n\nThe dataset contains no known limitations or biases that could affect its usage.\n\n**Ethical Considerations**\n\nThe dataset is licensed under [License] and owned by [Owner]. Users are responsible for ensuring that their use of the dataset complies with applicable laws, regulations, and ethical guidelines."
+}
